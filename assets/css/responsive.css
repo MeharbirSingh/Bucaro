@@ -1158,9 +1158,10 @@
 
     }
 
+    
     .gallery{
 
-        padding:80px 0;
+        padding:70px 0;
 
     }
 
@@ -1168,15 +1169,22 @@
 
         grid-template-columns:1fr;
 
-        gap:20px;
+        gap:18px;
+
+        padding:0 18px;
 
     }
 
     .gallery-grid img{
 
-        height:260px;
+        height:220px;
 
+        width:100%;
+
+        object-fit:cover;
+        
     }
+
 
     .language-switch{
 
@@ -1399,6 +1407,48 @@
     
         line-height:1.9;
     
+    }
+
+/*==========================
+      TEAM MOBILE
+==========================*/
+
+    .team{
+
+        padding:80px 0;
+
+    }
+
+    .team h2{
+
+        font-size:2.2rem;
+
+    }
+
+    .team-intro{
+
+        padding:0 15px;
+
+    }
+
+    .team-grid{
+
+        grid-template-columns:1fr 1fr;
+
+        gap:20px;
+
+    }
+
+    .team-card img{
+
+        height:240px;
+
+    }
+
+    .team-card h3{
+
+        font-size:1.2rem;
+
     }
 
 }
