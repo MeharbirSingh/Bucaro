@@ -1,0 +1,759 @@
+/*==========================
+        HERO MENÚ
+==========================*/
+
+.menu-hero{
+
+    position:relative;
+
+    min-height:80vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+.menu-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+}
+
+.menu-hero .container{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:850px;
+
+}
+
+.menu-hero h1{
+
+    font-family:'Cinzel',serif;
+
+    font-size:4.5rem;
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.menu-hero p{
+
+    color:#E6E6E6;
+
+    font-size:1.15rem;
+
+    line-height:1.9;
+
+    margin-bottom:40px;
+
+}
+
+.menu-nav{
+
+    position: sticky;
+
+    top: 80px;
+
+    z-index: 998;
+
+    background:#121212;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    box-shadow:0 8px 25px rgba(0,0,0,.12);
+
+}
+
+.menu-nav .container{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:50px;
+
+    padding:20px;
+
+}
+
+.menu-nav a{
+
+    position:relative;
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.menu-nav a:hover{
+
+    color:var(--orange);
+
+}
+
+.menu-nav a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:2px;
+
+    background:var(--orange);
+
+    transition:.3s;
+
+}
+
+.menu-nav a:hover::after{
+
+    width:100%;
+
+}
+
+/*==========================
+    ESPECIALIDADES
+==========================*/
+
+.especialidades{
+
+    padding:120px 0;
+
+    background:#F8F4EE;
+
+}
+
+.especialidades h2{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    margin:20px 0;
+
+    color:#3A2E28;
+
+}
+
+.especialidades-intro{
+
+    max-width:750px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.especialidades-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.especialidad-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.especialidad-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.15);
+
+}
+
+.especialidad-card img{
+
+    width:100%;
+
+    height:260px;
+
+    object-fit:cover;
+
+}
+
+.especialidad-content{
+
+    padding:30px;
+
+}
+
+.especialidad-badge{
+
+    display:inline-block;
+
+    background:#FFE8C8;
+
+    color:#A35A00;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:.9rem;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.especialidad-content h3{
+
+    font-size:1.8rem;
+
+    margin-bottom:15px;
+
+    color:#3A2E28;
+
+}
+
+.especialidad-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*==========================
+            TAPAS
+==========================*/
+
+.tapas{
+
+    padding:120px 0;
+
+    background:#121212;
+
+}
+
+.tapas h2{
+
+    text-align:center;
+
+    color:white;
+
+    font-size:3rem;
+
+    margin:20px 0;
+
+}
+
+.tapas-intro{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    color:#CFCFCF;
+
+    line-height:1.9;
+
+}
+
+.tapas-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+/*==========================
+        TAPA CARD
+==========================*/
+
+.tapa-card{
+
+    background:white;
+
+    border-radius:18px;
+
+    overflow:hidden;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+    transition:.35s;
+
+}
+
+.tapa-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 30px 60px rgba(0,0,0,.18);
+
+}
+
+.tapa-image{
+
+    overflow:hidden;
+
+}
+
+.tapa-image img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+    transition:.4s;
+
+}
+
+.tapa-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+.tapa-content{
+
+    padding:28px;
+
+}
+
+.tapa-top{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:18px;
+
+}
+
+.tapa-top h3{
+
+    font-size:1.5rem;
+
+    color:#3A2E28;
+
+}
+
+.price{
+
+    color:var(--orange);
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+.tapa-content p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/*==========================
+        MONTADITOS
+==========================*/
+
+.montaditos{
+
+    padding:120px 0;
+
+    background:#F8F4EE;
+
+}
+
+.montaditos-intro{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+.montaditos-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+/*==========================
+        BEBIDAS
+==========================*/
+
+.bebidas{
+
+    padding:120px 0;
+
+    background:#121212;
+
+}
+
+.bebidas h2{
+
+    text-align:center;
+
+    font-size:3rem;
+
+    color:white;
+
+    margin:20px 0;
+
+}
+
+.bebidas-intro{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+    line-height:1.9;
+
+    color:#D8D8D8;
+
+}
+
+.bebida-category{
+
+    background:#1D1D1D;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    margin-bottom:40px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+
+}
+
+.bebida-category h3{
+
+    color:#E67E22;
+
+    font-size:1.8rem;
+
+    margin-bottom:25px;
+
+    font-family:'Cinzel', serif;
+
+}
+
+.bebida-category h4{
+
+    color:white;
+
+    font-size:1.3rem;
+
+    margin:35px 0 15px;
+
+    font-family:'Cinzel', serif;
+
+    font-weight:600;
+
+}
+
+.bebidas-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+.bebidas-table tr{
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.bebidas-table tr:last-child{
+
+    border-bottom:none;
+
+}
+
+.bebidas-table tr:hover{
+
+    background:rgba(255,255,255,.04);
+
+}
+
+.bebidas-table td{
+
+    padding:16px 5px;
+
+    font-size:1.05rem;
+
+    color:#ECECEC;
+
+}
+
+.bebidas-table td:nth-child(2),
+.bebidas-table td:nth-child(3){
+
+    text-align:right;
+
+    width:110px;
+
+    font-weight:600;
+
+    color:#E67E22;
+
+}
+
+.vino-intro{
+
+    color:#BDBDBD;
+
+    line-height:1.8;
+
+    font-style:italic;
+
+}
+
+.bebidas-table th{
+
+    color:#E67E22;
+
+    padding:15px 5px;
+
+}
+
+.bebidas-table th:first-child{
+
+    text-align:left;
+
+}
+
+.bebidas-table th:nth-child(2),
+.bebidas-table th:nth-child(3){
+
+    text-align:right;
+
+}
+
+/*==========================
+      HOW IT WORKS
+==========================*/
+
+.how-it-works{
+
+    padding:120px 0;
+
+    background:#F8F4EE;
+
+    text-align:center;
+
+}
+
+.how-it-works h2{
+
+    font-family:'Cinzel',serif;
+
+    font-size:3.4rem;
+
+    margin:20px 0;
+
+}
+
+.how-intro{
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+    color:#666;
+
+    font-size:1.15rem;
+
+    line-height:2;
+
+}
+
+.steps{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+}
+
+.step-card{
+
+    background:white;
+
+    padding:45px 35px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    position:relative;
+
+}
+
+.step-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.step-number{
+
+    position:absolute;
+
+    top:-18px;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    background:#E67E22;
+
+    color:white;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-weight:700;
+
+}
+
+.step-card i{
+
+    font-size:2.7rem;
+
+    color:#E67E22;
+
+    margin:20px 0;
+
+}
+
+.step-card h3{
+
+    font-family:'Cinzel',serif;
+
+    font-size:1.6rem;
+
+    margin-bottom:18px;
+
+    color:#121212;
+
+}
+
+.step-card p{
+
+    color:#666;
+
+    font-size:1.08rem;
+
+    line-height:1.9;
+
+}
+
+.section-subtitle{
+
+    display:inline-block;
+
+    color:#E67E22;
+
+    font-size:1.1rem;
+
+    font-weight:600;
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    margin-bottom:15px;
+
+}
+
+.how-it-works .section-subtitle{
+
+    font-size:1.1rem;
+
+    letter-spacing:5px;
+
+}
